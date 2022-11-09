@@ -1,0 +1,19 @@
+Package: MixLaw
+Type: Package
+Title: Génération de mélange de lois
+Version: 0.1.0
+Authors@R: person("Komi", "Ayi",
+                  email = "ayi.komi_roger@courrier.uqam.ca",
+                  role = c("aut", "cre"))
+Description: Ce package permet d'implémenter la classe représentant un mélange de distribution.
+             Il permet de générer des observations issues d'un mélange de lois,
+             de fournir une représentation de la densité correspondant aux réalisations, de 
+             calculer la moyenne et le quantile des observations.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: kableExtra (>= 1.3.4)
+RoxygenNote: 7.2.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
