@@ -14,25 +14,26 @@
 #' N <- melange_normal(c(1,.2,4),c(.1,.8,8))
 #' print(N)
 #'
-#' @importFrom kableExtra kbl kable_classic add_header_above '%>%'
-#'
 #' @export
 print.melange_dist <- function(x,...){
 
   if(class(x)[1]== "melange_dist"){
-    tab <- t(x$Poids)
+    cat("\n",...)
+    cat("Informations sur les lois \\u00e0 m\\u00e9langer: ","\n",...)
+    tab <- round(t(x$Poids),3)
     colnames(tab) <- as.character(x$ois[[1]][-1])
     rownames(tab) <- "Poids"
-    kbl(tab, align = "c") %>%
-      kable_classic( full_width = F) %>%
-      add_header_above(c(" ","Lois" =ncol(tab)))
   }else if(class(x)[1]== "melange_normal"){
-    tab <- rbind(x$Moy,x$Ect,x$Poids)
+    cat("\n",...)
+    cat("Informations sur les lois normales \\u00e0 m\\u00e9langer: ","\n",...)
+    tab <- round(rbind(x$Moy,x$Ect,x$Poids),3)
     rownames(tab) <- c("Moyenne","Ecart-type","Poids")
-    kbl(round(tab,3), align = "c") %>%
-      kable_classic( full_width = F) %>%
-      add_header_above(c(" ","Lois normales" =ncol(tab)))
   }
+  print(tab)
+  cat("\n",...)
+  cat("class:","\n")
+  print(class(x))
+
 }
 
 

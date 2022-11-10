@@ -12,7 +12,7 @@ Description: Ce package permet d'implémenter la classe représentant un mélang
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Imports: kableExtra (>= 1.3.4), graphics (>= 4.2.2)
+Imports: graphics (>= 4.2.2)
 RoxygenNote: 7.2.1
 Suggests: 
     testthat (>= 3.0.0)
