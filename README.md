@@ -9,7 +9,7 @@ Suivre les instructions suivantes pour télécharger le package et l’installer
 
 #library(devtools)
 
-#Install _github("komiayi/MixLaw")
+#install_github("komiayi/MixLaw")
 
 #library(MixLaw)
 
