@@ -25,6 +25,6 @@ Classe  \code{S3} d'un objet de mélange de lois normales. Les méthodes de la c
 }
 \examples{
 melange_normal(c(1,1),c(.1,.8))
-melange_normal( c(3, 4),c(2,2),prob= c(.2,.6),"Mélange de deux exponentielles")
+melange_normal( c(3, 4),c(2,2),prob= c(.2,.6))
 
 }
