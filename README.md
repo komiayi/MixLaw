@@ -13,6 +13,6 @@ Suivre les instructions suivantes pour télécharger le package et l’installer
 
 #library(MixLaw)
 
-#?melange dist
+#?melange_dist
 
 ##Cliquez sur "Index" à la fin de la page d’aide
