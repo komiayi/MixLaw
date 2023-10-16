@@ -2,7 +2,7 @@
 #'
 #' Moyenne des observations issus d'un objet de classe \code{melange_dist}.
 #'
-#' @param x objet de classe \code{melange_dist}.
+#' @param u objet de classe \code{melange_dist}.
 #'
 #' @param \dots arguments supplémentaires.
 #'
